@@ -1,0 +1,14 @@
+{
+    "name": "lazyku",
+    "description": "v2ray websocket proxy on heroku",
+    "keywords": ["v2ray vmess vless trojan shadowsocks socks tor"],
+    "env": {
+        "AA": {
+            "description": "点击Deploy app按钮即可开始部署",
+            "value": "如出现错误，请检查配置文件是否正确"
+        }
+    },
+    "website": "https://github.com/mixool/lazyku",
+    "repository": "https://github.com/mixool/lazyku",
+    "stack": "container"
+}
