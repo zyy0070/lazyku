@@ -12,7 +12,7 @@ header {
 @websocket_v2ray_vmess {
 header Connection *Upgrade*
 header Upgrade    websocket
-path /$AUUID-vmess
+path /8f91b6a0-e8ee-11ea-adc1-0242ac120002-vmess
 }
 reverse_proxy @websocket_v2ray_vmess unix//etc/caddy/vmess
 
@@ -20,27 +20,27 @@ reverse_proxy @websocket_v2ray_vmess unix//etc/caddy/vmess
 @websocket_v2ray_vless {
 header Connection *Upgrade*
 header Upgrade    websocket
-path /$AUUID-vless
+path /8f91b6a0-e8ee-11ea-adc1-0242ac120002-vless
 }
 reverse_proxy @websocket_v2ray_vless unix//etc/caddy/vless
 
 @websocket_v2ray_trojan {
 header Connection *Upgrade*
 header Upgrade    websocket
-path /$AUUID-trojan
+path /8f91b6a0-e8ee-11ea-adc1-0242ac120002-trojan
 }
 reverse_proxy @websocket_v2ray_trojan unix//etc/caddy/trojan
 
 @websocket_v2ray_ss {
 header Connection *Upgrade*
 header Upgrade    websocket
-path /$AUUID-ss
+path /8f91b6a0-e8ee-11ea-adc1-0242ac120002-ss
 }
 reverse_proxy @websocket_v2ray_ss 127.0.0.1:4234
 
 @websocket_v2ray_socks {
 header Connection *Upgrade*
 header Upgrade    websocket
-path /$AUUID-socks
+path /8f91b6a0-e8ee-11ea-adc1-0242ac120002-socks
 }
 reverse_proxy @websocket_v2ray_socks 127.0.0.1:5234

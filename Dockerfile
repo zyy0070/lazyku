@@ -12,7 +12,7 @@ RUN apk update && \
 
 ADD Caddyfile /etc/caddy/Caddyfile
 ADD v2ray.json /v2ray.json
+ADD start.sh /start.sh
+RUN chmod +x /start.sh
 
-CMD nohup tor & \
-	nohup /v2ray -config /v2ray.json & \
-	caddy run --config /etc/caddy/Caddyfile --adapter caddyfile
+CMD /start.sh
